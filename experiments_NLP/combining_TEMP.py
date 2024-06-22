@@ -37,11 +37,20 @@ def combine_directories(dir_a, dir_b, dir_c):
 #                     "/rcfs/projects/sml2024/pytorch_soo/experiments/expt_rslts",
 #                     dir_c = "/rcfs/projects/sml2024/pytorch_soo/experiments/COMBINED")
 
-combine_directories("/rcfs/projects/sml2024/pytorch_soo/experiments/expt_rslts",
-                    "/rcfs/projects/sml2024/pytorch_soo/experiments/expt_rslts_fr_no_qlora_linear_probe",
-                    dir_c = "/rcfs/projects/sml2024/pytorch_soo/experiments/COMBINED")
+combine_directories("/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/expt_rslts",
+                    "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/expt_rslts_fr_no_qlora_linear_probe",
+                    dir_c = "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED")
 
-combine_directories("/rcfs/projects/sml2024/pytorch_soo/experiments/COMBINED",
-                    "/rcfs/projects/sml2024/pytorch_soo/experiments/expt_rslts_sgd_linear_probe_no_qlora",
-                    dir_c = "/rcfs/projects/sml2024/pytorch_soo/experiments/all_jsons")
+combine_directories("/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED",
+                    "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/expt_rslts_sgd_linear_probe_no_qlora",
+                    dir_c = "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED2")
 
+
+combine_directories("/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED2",
+                    "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/expt_rslts_bfgs_linear_probe_no_qlora",
+                    dir_c = "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED3")
+
+
+combine_directories("/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/COMBINED3",
+                    "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/CURRENT",
+                    dir_c = "/rcfs/projects/sml2024/new_clone/pytorch_soo/experiments_NLP/all_jsons")
